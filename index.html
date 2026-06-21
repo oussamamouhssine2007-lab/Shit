@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Import Question</title>
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    ```html id="popup-love-message"
+<!-- POPUP -->
+<div id="lovePopup" class="popup-overlay">
+  <div class="popup-box">
+    <h2>❤️ A Message For You ❤️</h2>
+
+    <p>
+      I don't want to rush time.
+      I just know that if one day I get married,
+      I'd love for it to be with someone like you.
+    </p>
+
+    <p>
+      You're my sunshine on the darkest days.
+      I'm not asking for forever today,
+      but if I could, I'd save a place in my future
+      just for you.
+    </p>
+
+    <button onclick="closePopup()">
+      OK ❤️
+    </button>
+  </div>
+</div>
+
+<style>
+.popup-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.75);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:99999;
+}
+
+.popup-box{
+  background:white;
+  width:600px;
+  max-width:90%;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.popup-box h2{
+  color:#ff4d88;
+}
+
+.popup-box p{
+  line-height:1.6;
+  font-size:18px;
+}
+
+.popup-box button{
+  margin-top:15px;
+  padding:12px 30px;
+  border:none;
+  border-radius:10px;
+  background:#ff4d88;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+</style>
+
+<script>
+function closePopup() {
+  document.getElementById("lovePopup").style.display = "none";
+}
+</script>
+```
+
+    <div class="container">
+      <div class="banner-gif">
+        <img id="banner" src="./public/images/mid.png" alt="banner" />
+        <h2>this picture is so bad hhhh</h2>
+      </div>
+      <h1 id="question-heading">Will you be my wife?</h1>
+      <div class="buttons">
+        <button id="yes-button"><p>Yes</p></button>
+        <button id="no-button"><p>No</p></button>
+      </div>
+      <div class="message">
+        <h2 id="success-message">Yepppie, see you sooonnn :3</h2>
+        
+       
+      </div>
+     
+    </div>
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>
